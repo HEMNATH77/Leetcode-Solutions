@@ -1,10 +1,8 @@
-from itertools import count
-
 
 def count_and_say(n):
-    result =""
+    result ="1"
 
-    for i in range(n):
+    for i in range(n - 1):
         current = ""
         i = 0
 
@@ -14,8 +12,8 @@ def count_and_say(n):
                 count += 1
                 i += 1
             current += str(count) + result[i]
+            i +=1
         result = current
-        i += 1
     return result
 
 n = 4
